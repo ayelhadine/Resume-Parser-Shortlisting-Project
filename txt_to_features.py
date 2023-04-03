@@ -15,7 +15,7 @@ def txt_features(p_resumetxt, p_jdtxt):
     tv = TfidfVectorizer(max_df=0.85,min_df=1,ngram_range=(1,3))
     tfidf_wm = tv.fit_transform(txt)
 
-    tfidf_tokens = tv.get_feature_names()
+    tfidf_tokens = tv.get_feature_names_out()
     df_tfidfvect = pd.DataFrame(data = tfidf_wm.toarray(),columns = tfidf_tokens)
 
     return df_tfidfvect
