@@ -18,7 +18,7 @@ In fact, for recruiters it is a challenging task to handle thousands of resumes 
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/ayelhadine/Resume-Parser-Shortlisting-Project.git
 ```
 
 Go to the project directory
