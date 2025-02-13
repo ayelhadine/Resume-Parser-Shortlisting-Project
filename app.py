@@ -15,6 +15,9 @@ UPLOAD_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'files/
 DOWNLOAD_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'files/outputs/')
 DATA_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'Data/')
 
+if not os.path.isdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'files/')):
+    os.mkdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'files/'))
+    
 # Make directory if UPLOAD_FOLDER does not exist
 if not os.path.isdir(UPLOAD_FOLDER):
     os.mkdir(UPLOAD_FOLDER)

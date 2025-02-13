@@ -77,5 +77,5 @@ def read_files(file_path):
 
 
 if __name__=="__main__":
-    txt = read_files("/home/ayoub/DS/Parser-Shortlisting-Project/files/resumes")
+    txt = read_files("/home/kenshiro/ds/Resume-Parser-Shortlisting-Project/resumes")
     print(txt)
